@@ -16,7 +16,7 @@
 }
 
 #sidebar {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('background.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) ), url('background.jpg');
     background-size: cover;
     height: 100vh;
     width: 35%;
@@ -63,11 +63,12 @@
 }
 
 .signup-form p {
-    color: white;
+    color: cyan;
     text-align: center;
     padding-top: 10px;
     font-size: 25px;
     height: 10%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .signup-form form {
@@ -78,25 +79,43 @@
 .signup-form fieldset {
     height: 33.33%;
     border: none;
+    border-top: 1px solid black;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
 }
 
 .signup-form input {
     height: 3vh;
+    width: 30vh;
     border: none;
-    border-radius: 25px;
-    max-width: 33.99%;
+    border-radius: 5px;
+    font-size: 0.75em;
+    background-color: bisque;
+    margin-top: 10px;
+}.signup-form input:focus {
+    outline: none;
+    border: 2px solid green;
 }
 
-.signup-form input, label {
-    margin-left: 50px;
+.signup-form .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    letter-spacing: 2px;
+}
+
+.signup-form, input, label {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .info-submit {
     height: 23.33vh;
     color: limegreen;
+    text-align: center;
 }
 
 .info-submit button {
@@ -105,16 +124,16 @@
     border: none;
     box-shadow: 10px 5px 5px cyan;
     padding: 15px 20px 15px;
-    margin-left: 70px;
     margin-top: 50px;
     font-size: 20px;
     letter-spacing: 2px;
 }.info-submit button:hover{
     cursor: pointer;
+    color: cyan;
+    box-shadow: 10px 5px 5px black;
 }
 
 .info-submit p {
     font-size: 17.5px;
     margin-top: 15px;
-    margin-left: 70px;
 }
